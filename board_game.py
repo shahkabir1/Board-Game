@@ -1,10 +1,10 @@
-"""A code file simulating a Board game.
-"""
+"""A code file simulating a Board game."""
+
 import random
 from time import sleep
 
 d = [1, 2, 3, 4, 5, 6]
-
+# 6-sided die that is rolled using the random module.
 
 class Player:
     """A player in the board game.
@@ -105,7 +105,8 @@ class Board:
         self.game_start()
 
     def move(self, current_player: str) -> None:
-        """Move the player forward, according to the role of a die."""
+        """Move the player forward, according to the role of a die. The die roll is chosen on random upon calling this
+        method."""
         roll = random.choice(d)
         for i in range(len(self.players)):
             if (self.players[i].name == current_player
@@ -289,3 +290,4 @@ class Board:
 
 
 b = Board()
+#Create a Board object to initialize the game.
