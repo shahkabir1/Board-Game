@@ -4,6 +4,8 @@ import random
 from time import sleep
 
 d = [1, 2, 3, 4, 5, 6]
+
+
 # 6-sided die that is rolled using the random module.
 
 class Player:
@@ -290,4 +292,4 @@ class Board:
 
 
 b = Board()
-#Create a Board object to initialize the game.
+# Create a Board object to initialize the game.
